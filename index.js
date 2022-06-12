@@ -8,7 +8,7 @@ const app = express();
 const dns = require("dns");
 
 // Basic Configuration
-const port = /* process.env.PORT ||  */ 3000;
+const port = process.env.PORT || 3000;
 
 // Dictionary to keep track of shortened URLs
 const urlDirectory = new Map();
